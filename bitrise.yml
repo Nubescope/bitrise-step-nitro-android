@@ -1,0 +1,39 @@
+---
+format_version: "4"
+default_step_lib_source: "https://github.com/bitrise-io/bitrise-steplib.git"
+project_type: ""
+app:
+  envs:
+    - BITRISE_STEP_ID: nitro-android
+    - BITRISE_STEP_GIT_CLONE_URL: "https://github.com/nitro-build/bitrise-step-nitro-android.git"
+meta:
+  bitrise.io:
+    stack: linux-docker-android-20.04
+workflows:
+  release:
+    steps:
+      - activate-ssh-key@4:
+          run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+      - git-clone@6: {}
+      - nvm@1:
+          run_if: .IsCI
+          inputs:
+            - node_version: "16"
+      - cache-pull@2: {}
+      - yarn@0:
+          inputs:
+            - cache_local_deps: "yes"
+            - command: install
+      - cache-push@2:
+          inputs:
+            - compress_archive: "true"
+      - git::https://github.com/bitrise-steplib/steps-readme-generator.git@main:
+          title: Generate README
+      - yarn@0:
+          inputs:
+            - command: semantic-release
+trigger_map:
+  - push_branch: main
+    workflow: release
+  - push_branch: beta
+    workflow: release
