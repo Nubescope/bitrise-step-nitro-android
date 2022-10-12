@@ -29,8 +29,8 @@ You can also run this step directly with [Bitrise CLI](https://github.com/bitris
 | `android_flavor` | Set product flavor for Gradle build variant |  |  |
 | `version_name` | The version name for the app |  |  |
 | `version_code` | The version code for the app |  |  |
-| `disable_version_name_from_package_json` | By default will get the 'version' field from package.json and set the version name |  | `$NITRO_DISABLE_VERSION_NAME_FROM_PACKAGE_JSON` |
-| `disable_version_code_auto_generation` | By default will generate a timestamp based number and set the version code |  | `NITRO_DISABLE_VERSION_CODE_AUTO_GENERATION` |
+| `disable_version_name_from_package_json` | By default will get the 'version' field from package.json and set the version name |  |  |
+| `disable_version_code_auto_generation` | By default will generate a timestamp based number and set the version code |  |  |
 | `keystore_url` | Keystore url |  | `$BITRISEIO_ANDROID_KEYSTORE_URL` |
 | `keystore_password` | Keystore password | sensitive | `$BITRISEIO_ANDROID_KEYSTORE_PASSWORD` |
 | `keystore_key_alias` | Keystore alias |  | `$BITRISEIO_ANDROID_KEYSTORE_ALIAS` |
