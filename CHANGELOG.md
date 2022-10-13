@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/nitro-build/bitrise-step-nitro-android/compare/1.0.1...1.0.2) (2022-10-13)
+
+
+### Bug Fixes
+
+* apktool injection issue ([bda77b4](https://github.com/nitro-build/bitrise-step-nitro-android/commit/bda77b49e49c8844f5f4c774dcc6e0355747d216))
+
 ## [1.0.1](https://github.com/nitro-build/bitrise-step-nitro-android/compare/1.0.0...1.0.1) (2022-10-12)
 
 
