@@ -33,7 +33,7 @@ inputs:
       title: "Root directory"
       summary: "The directory within your project, in which your code is located. Leave this field empty if your code is not located in a subdirectory"
       is_expand: true
-  - android_flavor:
+  - flavor:
     opts:
       title: "Flavor"
       summary: "Set product flavor for Gradle build variant"

@@ -44,8 +44,8 @@ if [[ -n ${root_directory} ]]; then
   args+=("--root-directory" "${root_directory}")
 fi
 
-if [[ -n ${android_flavor} ]]; then
-  args+=("--android-flavor" "${android_flavor}")
+if [[ -n ${flavor} ]]; then
+  args+=("--android-flavor" "${flavor}")
 fi
 
 # --------------
@@ -74,20 +74,20 @@ fi
 # App Signing
 # -----------
 
-if [[ -n ${android_keystore_url} ]]; then
-  args+=("--android-keystore-url" "${android_keystore_url}")
+if [[ -n ${keystore_url} ]]; then
+  args+=("--android-keystore-url" "${keystore_url}")
 fi
 
-if [[ -n ${android_keystore_password} ]]; then
-  args+=("--android-keystore-password" "${android_keystore_password}")
+if [[ -n ${keystore_password} ]]; then
+  args+=("--android-keystore-password" "${keystore_password}")
 fi
 
-if [[ -n ${android_keystore_key_alias} ]]; then
-  args+=("--android-keystore-key-alias" "${android_keystore_key_alias}")
+if [[ -n ${keystore_key_alias} ]]; then
+  args+=("--android-keystore-key-alias" "${keystore_key_alias}")
 fi
 
-if [[ -n ${android_keystore_key_password} ]]; then
-  args+=("--android-keystore-key-password" "${android_keystore_key_password}")
+if [[ -n ${keystore_key_password} ]]; then
+  args+=("--android-keystore-key-password" "${keystore_key_password}")
 fi
 
 # -------
