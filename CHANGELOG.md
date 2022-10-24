@@ -1,3 +1,23 @@
+# [2.0.0](https://github.com/nitro-build/bitrise-step-nitro-android/compare/1.0.2...2.0.0) (2022-10-24)
+
+
+### Bug Fixes
+
+* upgrade to the latest nitro version ([b874839](https://github.com/nitro-build/bitrise-step-nitro-android/commit/b8748392f68d0feba05a21b24ed510a8e2929545))
+
+
+### Features
+
+* add verbose argument ([a1ed677](https://github.com/nitro-build/bitrise-step-nitro-android/commit/a1ed677c1b3f11a14aab7cabab01899f041d8d8e))
+* remove android_ prefix ([ae8cacf](https://github.com/nitro-build/bitrise-step-nitro-android/commit/ae8cacffeeb65c0fa8f4465d56d78f98d5b6499c))
+* upgrade nitro version ([c5d31b6](https://github.com/nitro-build/bitrise-step-nitro-android/commit/c5d31b61c23a4574ec8b5f5048ac8f9cc6df5721))
+
+
+### BREAKING CHANGES
+
+* remove android prefix to android_flavor
+* remove android prefix to the keystore args
+
 ## [1.0.2](https://github.com/nitro-build/bitrise-step-nitro-android/compare/1.0.1...1.0.2) (2022-10-13)
 
 
