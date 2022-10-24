@@ -12,7 +12,7 @@
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "semantic-release": "19.0.5",
-    "nitro": "ssh://git@github.com:underscopeio/nitro.git#0.5.1"
+    "nitro": "ssh://git@github.com:underscopeio/nitro.git#0.5.2"
   },
   "devDependencies": {
     "@commitlint/cli": "17.1.2",
