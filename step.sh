@@ -144,6 +144,11 @@ if [[ -n ${output_directory} ]]; then
   args+=("--output-directory" "${output_directory}")
 fi
 
+# shellcheck disable=SC2154
+if [[ "${verbose}" == "true" || "${verbose}" == "yes" ]]; then
+  args+=("--verbose")
+fi
+
 # -------------------
 # Nitro Cli execution
 # -------------------

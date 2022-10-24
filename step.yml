@@ -180,11 +180,11 @@ inputs:
       title: "The entry file for bundle generation"
       summary: "The entry file for bundle generation"
       is_expand: true
-  - debug: "$NITRO_DEBUG_MODE"
+  - verbose:
     opts:
       category: "Advanced"
-      title: Debug
-      summary: Enable verbose logs
+      title: "Verbose logs"
+      summary: "Enable verbose logs"
       description: "Enable verbose logs"
       value_options:
         - "yes"
