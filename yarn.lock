@@ -2435,9 +2435,9 @@ nerf-dart@^1.0.0:
   resolved "https://registry.yarnpkg.com/nerf-dart/-/nerf-dart-1.0.0.tgz#e6dab7febf5ad816ea81cf5c629c5a0ebde72c1a"
   integrity sha512-EZSPZB70jiVsivaBLYDCyntd5eH8NTSMOn3rB+HxwdmKThGELLdYv8qVIMWvZEFy9w8ZZpW9h9OB32l1rGtj7g==
 
-"nitro@ssh://git@github.com:underscopeio/nitro.git#0.5.2":
-  version "0.6.1"
-  resolved "ssh://git@github.com:underscopeio/nitro.git#d03e068792af7230039597e6f52cdde02ff2aa4a"
+"nitro@ssh://git@github.com:underscopeio/nitro.git#0.6.0":
+  version "0.6.0"
+  resolved "ssh://git@github.com:underscopeio/nitro.git#974d474103d48d58f3db7c2cd479ae1f6fee9c17"
 
 node-emoji@^1.11.0:
   version "1.11.0"

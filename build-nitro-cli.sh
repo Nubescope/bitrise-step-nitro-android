@@ -20,6 +20,9 @@ default_config_path="$NITRO_CLI_TMP_DIR/src/config/default.ts"
 if [[ -n ${NITRO_API_HOST} ]]; then
   sed -i'' 's,\(apiHost:\).*,\1 '\'"$NITRO_API_HOST"\'\\,',g' "$default_config_path"
 fi
+if [[ -n ${NITRO_LICENSE_PUBLIC_KEY} ]]; then
+  sed -i'' 's,\(licensePublicKey:\).*,\1 '\`"$NITRO_LICENSE_PUBLIC_KEY"\`\\,',g' "$default_config_path"
+fi
 if [[ -n ${NITRO_AWS_ACCESS_KEY_ID} ]]; then
   sed -i'' 's,\(awsS3AccessKeyId:\).*,\1 '\'"$NITRO_AWS_ACCESS_KEY_ID"\'\\,',g' "$default_config_path"
 fi
