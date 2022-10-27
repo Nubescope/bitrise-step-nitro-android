@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/nitro-build/bitrise-step-nitro-android/compare/2.0.0...3.0.0) (2022-10-27)
+
+
+### Features
+
+* update to the latest nitro version ([6dea180](https://github.com/nitro-build/bitrise-step-nitro-android/commit/6dea180534db07e18339a550102f742dccd1a1d9))
+
+
+### BREAKING CHANGES
+
+* support for api-key and offline license
+
 # [2.0.0](https://github.com/nitro-build/bitrise-step-nitro-android/compare/1.0.2...2.0.0) (2022-10-24)
 
 
