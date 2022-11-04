@@ -2436,9 +2436,9 @@ nerf-dart@^1.0.0:
   resolved "https://registry.yarnpkg.com/nerf-dart/-/nerf-dart-1.0.0.tgz#e6dab7febf5ad816ea81cf5c629c5a0ebde72c1a"
   integrity sha512-EZSPZB70jiVsivaBLYDCyntd5eH8NTSMOn3rB+HxwdmKThGELLdYv8qVIMWvZEFy9w8ZZpW9h9OB32l1rGtj7g==
 
-"nitro@ssh://git@github.com:nitro-build/nitro.git#0.7.0":
-  version "0.7.0"
-  resolved "ssh://git@github.com:nitro-build/nitro.git#2f8cb210c62cb6cef1eef17175f5d8a6860a296e"
+"nitro@ssh://git@github.com:nitro-build/nitro.git#0.7.1":
+  version "0.7.1"
+  resolved "ssh://git@github.com:nitro-build/nitro.git#ee0dab06aa3fe279bb7b9c68cf3ec7823ae2fc4b"
 
 node-emoji@^1.11.0:
   version "1.11.0"
