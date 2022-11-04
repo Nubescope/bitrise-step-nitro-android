@@ -1,3 +1,10 @@
+# [4.0.0-beta.3](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.0.0-beta.2...4.0.0-beta.3) (2022-11-04)
+
+
+### Features
+
+* update to the latest nitro version ([eaf38a8](https://github.com/nitro-build/bitrise-step-nitro-android/commit/eaf38a8e36d52cf7e0b2ad0f37685edc6e81bfed))
+
 # [4.0.0-beta.2](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.0.0-beta.1...4.0.0-beta.2) (2022-11-04)
 
 
