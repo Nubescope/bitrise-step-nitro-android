@@ -1,3 +1,15 @@
+# [4.0.0-beta.1](https://github.com/nitro-build/bitrise-step-nitro-android/compare/3.0.0...4.0.0-beta.1) (2022-11-04)
+
+
+### Features
+
+* update nitro to the latest version ([186244b](https://github.com/nitro-build/bitrise-step-nitro-android/commit/186244b214c07674008d76346a8c8cdb5f668b43))
+
+
+### BREAKING CHANGES
+
+* remove android prefix to the args
+
 # [3.0.0](https://github.com/nitro-build/bitrise-step-nitro-android/compare/2.0.0...3.0.0) (2022-10-27)
 
 
