@@ -1,3 +1,18 @@
+# [4.0.0](https://github.com/nitro-build/bitrise-step-nitro-android/compare/3.0.0...4.0.0) (2022-11-04)
+
+
+### Features
+
+* point to the latest nitro version ([54a0954](https://github.com/nitro-build/bitrise-step-nitro-android/commit/54a0954c53cb239fd96748ae718d9da644d3652f))
+* update nitro to the latest version ([186244b](https://github.com/nitro-build/bitrise-step-nitro-android/commit/186244b214c07674008d76346a8c8cdb5f668b43))
+* update to the latest nitro version ([cb224a0](https://github.com/nitro-build/bitrise-step-nitro-android/commit/cb224a0f678ede68f9e76214c16670c1ead76add))
+* update to the latest nitro version ([eaf38a8](https://github.com/nitro-build/bitrise-step-nitro-android/commit/eaf38a8e36d52cf7e0b2ad0f37685edc6e81bfed))
+
+
+### BREAKING CHANGES
+
+* remove android prefix to the args
+
 # [4.0.0-beta.4](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.0.0-beta.3...4.0.0-beta.4) (2022-11-04)
 
 
