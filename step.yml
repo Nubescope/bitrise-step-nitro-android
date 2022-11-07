@@ -22,6 +22,10 @@ deps:
   apt_get:
     - name: pigz
     - name: file
+  brew:
+    - name: wget
+    - name: pigz
+    - name: gnu-sed
 toolkit:
   bash:
     entry_file: step.sh
