@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.0.0...4.0.1) (2022-11-07)
+
+
+### Bug Fixes
+
+* add missing dependencies for macosx stack ([fd7cc16](https://github.com/nitro-build/bitrise-step-nitro-android/commit/fd7cc16d899d9b0da29d4c0f07fb14bcbbd63c53))
+
 # [4.0.0](https://github.com/nitro-build/bitrise-step-nitro-android/compare/3.0.0...4.0.0) (2022-11-04)
 
 
