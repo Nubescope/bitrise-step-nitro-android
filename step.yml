@@ -1,10 +1,10 @@
 title: |-
-  Nitro build system for Android
+  Nitro for Android
 summary: |
-  Build React Native projects powered by Nitro
+  Build your React Native app faster than ever with Nitro
 description: |
-  This step allows you to easily run the Nitro builder by providing input parameters in a friendly way
-website: https://github.com/nitro-build/bitrise-step-nitro-android
+  This step builds your React Native app for Android using [Nitro](https://nitro.build). Get your **API key** on our [website](https://nitro.build).
+website: https://nitro.build
 source_code_url: https://github.com/nitro-build/bitrise-step-nitro-android
 support_url: https://github.com/nitro-build/bitrise-step-nitro-android/issues
 host_os_tags:
