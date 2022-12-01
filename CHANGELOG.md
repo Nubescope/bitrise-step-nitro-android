@@ -1,3 +1,15 @@
+# [4.2.0](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.1.0...4.2.0) (2022-12-01)
+
+
+### Bug Fixes
+
+* change website to Github url ([8894dbe](https://github.com/nitro-build/bitrise-step-nitro-android/commit/8894dbe4ad04698d491dfb9b710895a264ea5c42))
+
+
+### Features
+
+* add icon and modify metadata ([ac4c3a3](https://github.com/nitro-build/bitrise-step-nitro-android/commit/ac4c3a3a46caeb278e948dc128981ce7eeacfab2))
+
 # [4.1.0](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.0.1...4.1.0) (2022-12-01)
 
 
