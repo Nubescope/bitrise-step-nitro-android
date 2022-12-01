@@ -56,7 +56,7 @@ inputs:
       title: "Version code"
       summary: "The version code for the app"
       is_expand: true
-  - disable_version_name_from_package_json:
+  - disable_version_name_from_package_json: "no"
     opts:
       category: "App Versioning"
       title: "Disable automatic version name configuration"
@@ -65,7 +65,7 @@ inputs:
       value_options:
         - "yes"
         - "no"
-  - disable_version_code_auto_generation:
+  - disable_version_code_auto_generation: "no"
     opts:
       category: "App Versioning"
       title: "Disable automatic version code generation"
@@ -184,7 +184,7 @@ inputs:
       title: "The entry file for bundle generation"
       summary: "The entry file for bundle generation"
       is_expand: true
-  - verbose:
+  - verbose: "no"
     opts:
       category: "Advanced"
       title: "Verbose logs"
@@ -199,6 +199,14 @@ inputs:
       title: "Fail-safe mode"
       summary: "Runing the app in this mode allows you to prevent the build to fail but you can check the status in further steps"
       is_expand: true
+      
+  # API key
+  - api_key: "$NITRO_API_KEY"
+    opts:
+      title: "Nitro API key"
+      summary: "The API key provided by Nitro. It should be defined by setting NITRO_API_KEY secret."
+      is_expand: true
+      is_sensitive: true
 
 outputs:
   - NITRO_BUILD_STATUS:
