@@ -199,6 +199,14 @@ inputs:
       title: "Fail-safe mode"
       summary: "Runing the app in this mode allows you to prevent the build to fail but you can check the status in further steps"
       is_expand: true
+      
+  # API key
+  - api_key: "$NITRO_API_KEY"
+    opts:
+      title: "Nitro API key"
+      summary: "The API key provided by Nitro. It should be defined by setting NITRO_API_KEY secret."
+      is_expand: true
+      is_sensitive: true
 
 outputs:
   - NITRO_BUILD_STATUS:
