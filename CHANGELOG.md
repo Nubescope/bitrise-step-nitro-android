@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.0.1...4.1.0) (2022-12-01)
+
+
+### Features
+
+* add missing parameter and default values  ([09583a0](https://github.com/nitro-build/bitrise-step-nitro-android/commit/09583a0f77bf7f78b9ec01eef1aa66d30d020e3e))
+
 ## [4.0.1](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.0.0...4.0.1) (2022-11-07)
 
 

@@ -29,8 +29,8 @@ You can also run this step directly with [Bitrise CLI](https://github.com/bitris
 | `flavor` | Set product flavor for Gradle build variant |  |  |
 | `version_name` | The version name for the app |  |  |
 | `version_code` | The version code for the app |  |  |
-| `disable_version_name_from_package_json` | By default will get the 'version' field from package.json and set the version name |  |  |
-| `disable_version_code_auto_generation` | By default will generate a timestamp based number and set the version code |  |  |
+| `disable_version_name_from_package_json` | By default will get the 'version' field from package.json and set the version name |  | `no` |
+| `disable_version_code_auto_generation` | By default will generate a timestamp based number and set the version code |  | `no` |
 | `keystore_url` | Keystore url |  | `$BITRISEIO_ANDROID_KEYSTORE_URL` |
 | `keystore_password` | Keystore password | sensitive | `$BITRISEIO_ANDROID_KEYSTORE_PASSWORD` |
 | `keystore_key_alias` | Keystore alias |  | `$BITRISEIO_ANDROID_KEYSTORE_ALIAS` |
@@ -45,8 +45,9 @@ You can also run this step directly with [Bitrise CLI](https://github.com/bitris
 | `post_build_command` | Run command once build successfully finished (e.g. `yarn publish`) |  |  |
 | `output_directory` | The path to the directory where to place all of Nitro's output files |  | `$BITRISE_DEPLOY_DIR` |
 | `entry_file` | The entry file for bundle generation |  | `$ENTRY_FILE` |
-| `verbose` | Enable verbose logs |  |  |
+| `verbose` | Enable verbose logs |  | `no` |
 | `fail_safe` | Runing the app in this mode allows you to prevent the build to fail but you can check the status in further steps |  | `$NITRO_FAIL_SAFE` |
+| `api_key` | The API key provided by Nitro. It should be defined by setting NITRO_API_KEY secret. | sensitive | `$NITRO_API_KEY` |
 </details>
 
 <details>

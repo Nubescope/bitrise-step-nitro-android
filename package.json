@@ -1,6 +1,6 @@
 {
   "name": "bitrise-step-nitro-android",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "repository": "git@github.com:nitro-build/bitrise-step-nitro-android.git",
   "author": "Juan Pablo Garcia <juanpablogarcia@gmail.com>",
   "license": "MIT",
