@@ -22,10 +22,12 @@ deps:
   apt_get:
     - name: pigz
     - name: file
+    - name: jq
   brew:
     - name: wget
     - name: pigz
     - name: gnu-sed
+    - name: jq
 toolkit:
   bash:
     entry_file: step.sh
@@ -212,8 +214,8 @@ outputs:
   - NITRO_BUILD_STATUS:
     opts:
       title: "Build status"
-      summary: "The status of the latest build (success / failure)"
-      description: "The status of the latest build (success / failure)"
+      summary: "The status of the latest build (success / failed)"
+      description: "The status of the latest build (success / failed)"
   - NITRO_OUTPUT_DIR:
     opts:
       title: "Output directory"
