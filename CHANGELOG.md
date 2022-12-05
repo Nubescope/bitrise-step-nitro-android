@@ -1,3 +1,10 @@
+## [4.2.1](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.2.0...4.2.1) (2022-12-05)
+
+
+### Bug Fixes
+
+* declare missing system dependency ([c326f32](https://github.com/nitro-build/bitrise-step-nitro-android/commit/c326f323f0b624f250ec8874448a61243ffeff8d))
+
 # [4.2.0](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.1.0...4.2.0) (2022-12-01)
 
 
