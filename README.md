@@ -40,10 +40,10 @@ You can also run this step directly with [Bitrise CLI](https://github.com/bitris
 | `cache_env_var_lookup_keys` | A list of `\|` separated values with env variable keys to lookup to determine whether the build should be cached or not |  |  |
 | `cache_file_lookup_paths` | A list of `\|` separated value paths (relative to the root of the repo or absolute) to lookup in order to determine whether the build should be cached or not |  |  |
 | `disable_metro_cache` | Setting this field to yes will disable the React Native Metro cache feature |  | `$NITRO_DISABLE_METRO_CACHE` |
-| `aws_s3_access_key_id` | Access Key Id for S3 bucket build caching |  | `$NITRO_AWS_S3_ACCESS_KEY_ID` |
-| `aws_s3_secret_access_key` | Secret Access Key for S3 bucket build caching |  | `$NITRO_AWS_S3_SECRET_ACCESS_KEY` |
-| `aws_s3_region` | AWS Region where S3 bucket for build caching is located |  | `$NITRO_AWS_S3_REGION` |
-| `aws_s3_bucket` | Bucket name for S3 bucket build caching |  | `$NITRO_AWS_S3_BUCKET` |
+| `aws_s3_access_key_id` | AWS access key ID for S3 bucket build caching |  | `$NITRO_AWS_S3_ACCESS_KEY_ID` |
+| `aws_s3_secret_access_key` | AWS secret access key for S3 bucket build caching |  | `$NITRO_AWS_S3_SECRET_ACCESS_KEY` |
+| `aws_s3_region` | AWS region where S3 bucket for build caching is located |  | `$NITRO_AWS_S3_REGION` |
+| `aws_s3_bucket` | AWS bucket name for S3 bucket build caching |  | `$NITRO_AWS_S3_BUCKET` |
 | `pre_install_command` | Run command prior to install project dependencies (e.g. `rm -rf ./some-folder`) |  |  |
 | `pre_build_command` | Run command prior to start building the app (e.g. `yarn tsc && yarn test`) |  |  |
 | `post_build_command` | Run command once build successfully finished (e.g. `yarn publish`) |  |  |
