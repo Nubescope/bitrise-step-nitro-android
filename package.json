@@ -8,17 +8,17 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/changelog": "6.0.2",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "semantic-release": "19.0.5",
-    "nitro": "ssh://git@github.com:nitro-build/nitro.git#0.7.1"
+    "nitro": "ssh://git@github.com:nitro-build/nitro.git#feat/detox"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.1.2",
-    "@commitlint/config-conventional": "17.1.0",
+    "@commitlint/cli": "17.3.0",
+    "@commitlint/config-conventional": "17.3.0",
     "husky": "8.0.1",
-    "prettier": "2.7.1",
+    "prettier": "2.8.1",
     "prettier-plugin-sh": "0.12.8"
   }
 }
