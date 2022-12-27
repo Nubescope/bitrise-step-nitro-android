@@ -198,6 +198,12 @@ inputs:
       is_expand: true
 
   # Advanced
+  - detox_configuration:
+    opts:
+      category: "Advanced"
+      title: "Detox configuration"
+      summary: "Select a device configuration from your defined configurations."
+      is_expand: true
   - output_directory: "$BITRISE_DEPLOY_DIR"
     opts:
       category: "Advanced"

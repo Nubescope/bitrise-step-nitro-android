@@ -156,6 +156,10 @@ fi
 # Advanced
 # --------
 
+if [[ -n ${detox_configuration} ]]; then
+  args+=("--detox-configuration" "${detox_configuration}")
+fi
+
 if [[ -n ${output_directory} ]]; then
   args+=("--output-directory" "${output_directory}")
 fi
