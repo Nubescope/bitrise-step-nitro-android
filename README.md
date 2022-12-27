@@ -47,6 +47,7 @@ You can also run this step directly with [Bitrise CLI](https://github.com/bitris
 | `pre_install_command` | Run command prior to install project dependencies (e.g. `rm -rf ./some-folder`) |  |  |
 | `pre_build_command` | Run command prior to start building the app (e.g. `yarn tsc && yarn test`) |  |  |
 | `post_build_command` | Run command once build successfully finished (e.g. `yarn publish`) |  |  |
+| `detox_configuration` | Select a device configuration from your defined configurations. |  |  |
 | `output_directory` | The path to the directory where to place all of Nitro's output files |  | `$BITRISE_DEPLOY_DIR` |
 | `entry_file` | The entry file for bundle generation |  | `$ENTRY_FILE` |
 | `verbose` | Enable verbose logs |  | `no` |

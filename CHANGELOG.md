@@ -1,3 +1,10 @@
+# [4.4.0-beta.2](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.4.0-beta.1...4.4.0-beta.2) (2022-12-27)
+
+
+### Features
+
+* add detox configuration argument ([abf681f](https://github.com/nitro-build/bitrise-step-nitro-android/commit/abf681f62c1befcec81b764944337965f5876224))
+
 # [4.4.0-beta.1](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.3.0...4.4.0-beta.1) (2022-12-27)
 
 
