@@ -1,3 +1,10 @@
+# [4.4.0-beta.5](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.4.0-beta.4...4.4.0-beta.5) (2022-12-31)
+
+
+### Features
+
+* move release script to nitro ([84ae81c](https://github.com/nitro-build/bitrise-step-nitro-android/commit/84ae81cc1642ead146febf27afb10e008b765ba6))
+
 # [4.4.0-beta.4](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.4.0-beta.3...4.4.0-beta.4) (2022-12-30)
 
 
