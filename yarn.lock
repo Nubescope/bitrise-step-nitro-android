@@ -2490,7 +2490,7 @@ nerf-dart@^1.0.0:
 
 "nitro@ssh://git@github.com:nitro-build/nitro.git#feat/detox":
   version "0.7.1"
-  resolved "ssh://git@github.com:nitro-build/nitro.git#6d2ac09a1b813bf85784e578c36f047ea95bbceb"
+  resolved "ssh://git@github.com:nitro-build/nitro.git#96b1914ec8081204e9ab135e7fcbeebb0144cdaa"
 
 node-emoji@^1.11.0:
   version "1.11.0"
