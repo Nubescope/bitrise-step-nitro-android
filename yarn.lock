@@ -2490,7 +2490,7 @@ nerf-dart@^1.0.0:
 
 "nitro@ssh://git@github.com:nitro-build/nitro.git#feat/skip-signature-ios":
   version "0.7.1"
-  resolved "ssh://git@github.com:nitro-build/nitro.git#7cfd0c05c4d608dfb210eb7b5a873e8f528303dd"
+  resolved "ssh://git@github.com:nitro-build/nitro.git#9f63b99317c238eebc42d7eb84dc0fee8896d311"
 
 node-emoji@^1.11.0:
   version "1.11.0"
