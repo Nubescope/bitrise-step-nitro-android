@@ -63,8 +63,9 @@ You can also run this step directly with [Bitrise CLI](https://github.com/bitris
 | `NITRO_BUILD_STATUS` | The status of the latest build (success / failed) |
 | `NITRO_OUTPUT_DIR` | The path to the directory where to place all of Nitro's output files |
 | `NITRO_LOGS_PATH` | The full path to access the build log |
-| `NITRO_DEPLOY_PATH` | The full path to access the build artifacts |
 | `NITRO_SUMMARY_PATH` | The full path to access the build summary report |
+| `NITRO_APP_PATH` | The full path to access the Android package (.apk) |
+| `NITRO_DEPLOY_PATH` | The full path to access the Android package (.apk) |
 </details>
 
 ## 🙋 Contributing
