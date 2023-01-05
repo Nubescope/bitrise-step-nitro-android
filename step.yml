@@ -256,13 +256,18 @@ outputs:
       title: "Build log location"
       summary: "The full path to access the build log"
       description: "The full path to access the build log"
-  - NITRO_DEPLOY_PATH:
-    opts:
-      title: "Build artifacts location"
-      summary: "The full path to access the build artifacts"
-      description: "The full path to access the build artifacts"
   - NITRO_SUMMARY_PATH:
     opts:
       title: "Summary location"
       summary: "The full path to access the build summary report"
       description: "The full path to access the build summary report"
+  - NITRO_APP_PATH:
+    opts:
+      title: "Build application package location"
+      summary: "The full path to access the Android package (.apk)"
+      description: "The full path to access the Android package (.apk)"
+  - NITRO_DEPLOY_PATH: # deprecated
+    opts:
+      title: "Build application package location"
+      summary: "The full path to access the Android package (.apk)"
+      description: "The full path to access the Android package (.apk)"
