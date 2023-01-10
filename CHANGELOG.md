@@ -1,3 +1,10 @@
+## [4.4.1](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.4.0...4.4.1) (2023-01-10)
+
+
+### Bug Fixes
+
+* improve xcbeautify command detection ([eea9566](https://github.com/nitro-build/bitrise-step-nitro-android/commit/eea95667aec3fe727233115a58b54c7d2a1d286c))
+
 # [4.4.0](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.3.0...4.4.0) (2023-01-05)
 
 
