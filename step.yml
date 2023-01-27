@@ -225,6 +225,15 @@ inputs:
       value_options:
         - "yes"
         - "no"
+  - debug: "no"
+    opts:
+      category: "Advanced"
+      title: "Debug step"
+      summary: "Enable step debugging"
+      description: "Enable step debugging"
+      value_options:
+        - "yes"
+        - "no"
   - fail_safe: "$NITRO_FAIL_SAFE"
     opts:
       category: "Advanced"

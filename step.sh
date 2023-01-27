@@ -1,14 +1,11 @@
 #!/bin/bash
-set -e
+
+# Do not exit on errors. If "safe mode" is not enabled it will exit properly at the end.
+set +e
 
 # ----------------------
 # Advanced configuration
 # ----------------------
-
-# shellcheck disable=SC2154
-if [[ "${fail_safe}" == "true" || "${fail_safe}" == "yes" ]]; then
-  set +e
-fi
 
 # shellcheck disable=SC2154
 if [[ "${debug}" == "true" || "${debug}" == "yes" ]]; then
@@ -31,6 +28,7 @@ export NITRO_BOOTED_AT_TIMESTAMP="${bitrise_process_started_at_ms}"
 
 # Build command arguments
 args=("android")
+args+=("--output-format" "json")
 args+=("--tracking-provider" "nitro-on-premise")
 
 args+=("--build-id" "${BITRISE_BUILD_SLUG}")
@@ -181,6 +179,7 @@ LINUX_BIN_FILE="nitro-linux"
 
 BIN_FILE=$([[ "$(uname)" == "Darwin" ]] && echo "${MACOS_BIN_FILE}" || echo "${LINUX_BIN_FILE}")
 BIN_FILE_PATH="${SCRIPT_DIR}/nitro"
+NITRO_OUTPUT_JSON_PATH="$(pwd)/nitro-output.json"
 
 # Download cli release
 wget -q "https://github.com/nitro-build/bitrise-step-nitro-android/releases/download/${BITRISE_STEP_VERSION}/${BIN_FILE}" -O "${BIN_FILE_PATH}"
@@ -189,11 +188,31 @@ ${BIN_FILE_PATH} "${args[@]}"
 
 exit_code=$?
 
+# Set environment variables using envman
 if [[ exit_code -ne 0 ]]; then
-  echo "⚠️ Nitro has thrown a '${exit_code}' error code while running on fail-safe mode. You can check 'NITRO_BUILD_FAILED' value in further steps."
-  envman add --key "NITRO_BUILD_FAILED" --value "true"
   envman add --key "NITRO_BUILD_STATUS" --value "failed"
 else
-  envman add --key "NITRO_BUILD_FAILED" --value "false"
   envman add --key "NITRO_BUILD_STATUS" --value "success"
+fi
+
+if [ -f "${NITRO_OUTPUT_JSON_PATH}" ]; then
+  output=$(cat < "${NITRO_OUTPUT_JSON_PATH}")
+
+  echo "${output}" | jq -r '.appPath' | xargs -I{} echo -n {} | envman add --key NITRO_APP_PATH
+  echo "${output}" | jq -r '.outputDir' | xargs -I{} echo -n {} | envman add --key NITRO_OUTPUT_DIR
+  echo "${output}" | jq -r '.summaryPath' | xargs -I{} echo -n {} | envman add --key NITRO_SUMMARY_PATH
+  echo "${output}" | jq -r '.logsPath' | xargs -I{} echo -n {} | envman add --key NITRO_LOGS_PATH
+else
+  echo "File not found: ${NITRO_OUTPUT_JSON_PATH}"
+fi
+
+# shellcheck disable=SC2154
+if [[ "${fail_safe}" == "true" || "${fail_safe}" == "yes" ]]; then
+  if [[ exit_code -ne 0 ]]; then
+    echo "⚠️ Nitro has thrown a '${exit_code}' error code while running on fail-safe mode. You can check 'NITRO_BUILD_STATUS' value in further steps."
+  fi  
+else
+  # If not running in "safe mode" exit with captured exit_code
+  set -e
+  exit $exit_code
 fi
