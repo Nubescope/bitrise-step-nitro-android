@@ -179,7 +179,7 @@ LINUX_BIN_FILE="nitro-linux"
 
 BIN_FILE=$([[ "$(uname)" == "Darwin" ]] && echo "${MACOS_BIN_FILE}" || echo "${LINUX_BIN_FILE}")
 BIN_FILE_PATH="${SCRIPT_DIR}/nitro"
-NITRO_OUTPUT_JSON_PATH="${SCRIPT_DIR}/nitro-output.json"
+NITRO_OUTPUT_JSON_PATH="$(pwd)/nitro-output.json"
 
 # Download cli release
 wget -q "https://github.com/nitro-build/bitrise-step-nitro-android/releases/download/${BITRISE_STEP_VERSION}/${BIN_FILE}" -O "${BIN_FILE_PATH}"
@@ -202,6 +202,8 @@ if [ -f "${NITRO_OUTPUT_JSON_PATH}" ]; then
   echo "${output}" | jq -r '.outputDir' | xargs -I{} echo -n {} | envman add --key NITRO_OUTPUT_DIR
   echo "${output}" | jq -r '.summaryPath' | xargs -I{} echo -n {} | envman add --key NITRO_SUMMARY_PATH
   echo "${output}" | jq -r '.logsPath' | xargs -I{} echo -n {} | envman add --key NITRO_LOGS_PATH
+else
+  echo "File not found: ${NITRO_OUTPUT_JSON_PATH}"
 fi
 
 # shellcheck disable=SC2154
