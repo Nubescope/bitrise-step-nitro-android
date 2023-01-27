@@ -1,3 +1,10 @@
+# [4.5.0-beta.1](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.4.1...4.5.0-beta.1) (2023-01-27)
+
+
+### Features
+
+* upgrade nitro CLI version ([62f91f3](https://github.com/nitro-build/bitrise-step-nitro-android/commit/62f91f3cfaa2c3058b52f9db896e8da77046ae27))
+
 ## [4.4.1](https://github.com/nitro-build/bitrise-step-nitro-android/compare/4.4.0...4.4.1) (2023-01-10)
 
 
