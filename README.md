@@ -51,6 +51,7 @@ You can also run this step directly with [Bitrise CLI](https://github.com/bitris
 | `output_directory` | The path to the directory where to place all of Nitro's output files |  | `$BITRISE_DEPLOY_DIR` |
 | `entry_file` | The entry file for bundle generation |  | `$ENTRY_FILE` |
 | `verbose` | Enable verbose logs |  | `no` |
+| `debug` | Enable step debugging |  | `no` |
 | `fail_safe` | Runing the app in this mode allows you to prevent the build to fail but you can check the status in further steps |  | `$NITRO_FAIL_SAFE` |
 | `api_key` | The API key provided by Nitro. It should be defined by setting NITRO_API_KEY secret. | sensitive | `$NITRO_API_KEY` |
 </details>
