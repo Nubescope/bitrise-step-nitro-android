@@ -12,7 +12,7 @@
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "semantic-release": "19.0.5",
-    "nitro": "ssh://git@github.com:nitro-build/nitro.git#develop"
+    "nitro": "ssh://git@github.com:nitro-build/nitro.git#0.9.0"
   },
   "devDependencies": {
     "@commitlint/cli": "17.3.0",
