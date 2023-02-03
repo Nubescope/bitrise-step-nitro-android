@@ -9,12 +9,6 @@
   ],
   "tagFormat": "${version}",
   "plugins": [
-    [
-      "@semantic-release/exec",
-      {
-        "prepareCmd": "./node_modules/nitro/packages/cli/scripts/release.sh ./dist-assets"
-      }
-    ],
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
@@ -31,11 +25,6 @@
         "message": "chore(release): bump version to ${nextRelease.version}[skip ci]\n\n${nextRelease.notes}"
       }
     ],
-    [
-      "@semantic-release/github",
-      {
-        "assets": ["dist-assets/**"]
-      }
-    ]
+    "@semantic-release/github"
   ]
 }
