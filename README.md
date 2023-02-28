@@ -40,20 +40,20 @@ You can also run this step directly with [Bitrise CLI](https://github.com/bitris
 | `disable_cache` | When setting this option to `yes` build cache optimizations won't be performed. (defaults to $NITRO_DISABLE_CACHE if present) |  |  |
 | `cache_env_var_lookup_keys` | A list of `\|` separated values with env variable keys to lookup to determine whether the build should be cached or not |  |  |
 | `cache_file_lookup_paths` | A list of `\|` separated value paths (relative to the root of the repo or absolute) to lookup in order to determine whether the build should be cached or not |  |  |
-| `disable_metro_cache` | Setting this field to yes will disable the React Native Metro cache feature |  |  |
-| `aws_s3_access_key_id` | AWS access key ID for S3 bucket build caching (defaults to $NITRO_AWS_S3_ACCESS_KEY_ID if present) |  |  |
-| `aws_s3_secret_access_key` | AWS secret access key for S3 bucket build caching (defaults to $NITRO_AWS_S3_SECRET_ACCESS_KEY if present) |  |  |
-| `aws_s3_region` | AWS region where S3 bucket for build caching is located (defaults to $NITRO_AWS_S3_REGION if present) |  |  |
-| `aws_s3_bucket` | AWS bucket name for S3 bucket build caching (defaults to $NITRO_AWS_S3_BUCKET if present) |  |  |
+| `disable_metro_cache` | Setting this field to yes will disable the React Native Metro cache feature. (defaults to $NITRO_DISABLE_METRO_CACHE if present) |  |  |
+| `aws_s3_access_key_id` | AWS access key ID for S3 bucket build caching. (defaults to $NITRO_AWS_S3_ACCESS_KEY_ID if present) |  |  |
+| `aws_s3_secret_access_key` | AWS secret access key for S3 bucket build caching. (defaults to $NITRO_AWS_S3_SECRET_ACCESS_KEY if present) |  |  |
+| `aws_s3_region` | AWS region where S3 bucket for build caching is located. (defaults to $NITRO_AWS_S3_REGION if present) |  |  |
+| `aws_s3_bucket` | AWS bucket name for S3 bucket build caching. (defaults to $NITRO_AWS_S3_BUCKET if present) |  |  |
 | `pre_install_command` | Run command prior to install project dependencies (e.g. `rm -rf ./some-folder`) |  |  |
 | `pre_build_command` | Run command prior to start building the app (e.g. `yarn tsc && yarn test`) |  |  |
 | `post_build_command` | Run command once build successfully finished (e.g. `yarn publish`) |  |  |
 | `detox_configuration` | Select a device configuration from your defined configurations. |  |  |
-| `output_directory` | The path to the directory where to place all of Nitro's output files (defaults to $BITRISE_DEPLOY_DIR) |  |  |
-| `entry_file` | The entry file for bundle generation (defaults to $ENTRY_FILE if present) |  |  |
+| `output_directory` | The path to the directory where to place all of Nitro's output files. (defaults to $BITRISE_DEPLOY_DIR) |  |  |
+| `entry_file` | The entry file for bundle generation. (defaults to $ENTRY_FILE if present) |  |  |
 | `verbose` | Enable verbose logs |  | `no` |
 | `debug` | Enable step debugging |  | `no` |
-| `fail_safe` | Runing the app in this mode allows you to prevent the build to fail but you can check the status in further steps  (defaults to $NITRO_FAIL_SAFE if present) |  |  |
+| `fail_safe` | Runing the app in this mode allows you to prevent the build to fail but you can check the status in further steps. (defaults to $NITRO_FAIL_SAFE if present) |  |  |
 </details>
 
 <details>
